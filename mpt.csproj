@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F339E899-0A9C-437F-98DF-D4AC0887D650}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>mpt</RootNamespace>
+    <AssemblyName>mpt</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MaterialSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialSkin.Updated.0.2.2\lib\MaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Word.15.0.4797.1003\lib\net20\Microsoft.Office.Interop.Word.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Avt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Avt.Designer.cs">
+      <DependentUpon>Avt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Baza.cs" />
+    <Compile Include="Biletcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Biletcs.Designer.cs">
+      <DependentUpon>Biletcs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlavM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GlavM.Designer.cs">
+      <DependentUpon>GlavM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mMenu.Designer.cs">
+      <DependentUpon>mMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modul.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modul.Designer.cs">
+      <DependentUpon>Modul.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="prot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="prot.Designer.cs">
+      <DependentUpon>prot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sotr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sotr.Designer.cs">
+      <DependentUpon>Sotr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Spec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Spec.Designer.cs">
+      <DependentUpon>Spec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stud.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stud.Designer.cs">
+      <DependentUpon>Stud.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Uch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Uch.Designer.cs">
+      <DependentUpon>Uch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vedom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vedom.Designer.cs">
+      <DependentUpon>Vedom.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Avt.resx">
+      <DependentUpon>Avt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Biletcs.resx">
+      <DependentUpon>Biletcs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GlavM.resx">
+      <DependentUpon>GlavM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mMenu.resx">
+      <DependentUpon>mMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modul.resx">
+      <DependentUpon>Modul.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="prot.resx">
+      <DependentUpon>prot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sotr.resx">
+      <DependentUpon>Sotr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Spec.resx">
+      <DependentUpon>Spec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stud.resx">
+      <DependentUpon>Stud.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uch.resx">
+      <DependentUpon>Uch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vedom.resx">
+      <DependentUpon>Vedom.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Мпт_Рэу им. г.в. Плеханова_.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Мпт_Рэу им. г.в. Плеханова_ %283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Мпт_Рэу им. г.в. Плеханова_ %281%29.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
